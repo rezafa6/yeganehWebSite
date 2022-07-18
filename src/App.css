@@ -1,5 +1,10 @@
+@font-face {
+  font-family: nostalgia;
+  src: url(./assets/fonts/VariableFont_wght.ttf);
+}
 .App {
   text-align: center;
+  font-family: "nostalgia";
 }
 
 .App-logo {
