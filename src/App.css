@@ -1,43 +1,64 @@
 @font-face {
-  font-family: nostalgia;
-  src: url(./assets/fonts/VariableFont_wght.ttf);
+    font-family: nostalgia;
+    src: url(./assets/fonts/VariableFont_wght.ttf);
 }
+
 .App {
-  text-align: center;
-  font-family: "nostalgia";
+    text-align: center;
+    font-family: "nostalgia";
+}
+
+html {
+  background: whitesmoke!important;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (max-width: 800px) {
+    .image-profile {
+        width: 45% !important;
+    }
+
+    .main-side {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .right-side-main, .left-side-main {
+        width: 80% !important;
+        margin: 20px 50px 20px 50px !important;
+    }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
